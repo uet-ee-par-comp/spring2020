@@ -37,7 +37,7 @@ Extend the parallelized application of Exercise 4 to vectorize the matrix multip
 Extend the pthreaded application of Exercise 3 to vectorize the matrix multiplication using ISPC. The applcation should be multithreaded with pthreads and vectorized ISPC. Measure and report the parallel execution time with the maximum hardware threads of your CPU.
 
 ## Exercise 7
-Use GCC auto vectorize options in the compile the application of Exercise 4. Mesaure and report the execution time after GCC auto vectorization.
+Use GCC auto vectorize options for compiling the application of Exercise 4. Mesaure and report the execution time after GCC auto vectorization.
 
 ## Submitting the assignment
 Submit the assignment as a single ZIP file. Name the file as `prog_assn_1_<your roll number>`. The zip file must contain different directories for the abover exercises and a single PDF file that contains the measurement results. 
