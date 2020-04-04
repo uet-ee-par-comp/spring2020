@@ -40,5 +40,5 @@ Extend the pthreaded application of Exercise 3 to vectorize the matrix multiplic
 Use GCC auto vectorize options in the compile the application of Exercise 4. Mesaure and report the execution time after GCC auto vectorization.
 
 ## Submitting the assignment
-Submit the assignment as a single ZIP file. Name the file as your `prog_assn_1_<your roll number>`. The zip file must contain different directories for the abover exercises and a single PDF file that contains the measurement results. 
+Submit the assignment as a single ZIP file. Name the file as `prog_assn_1_<your roll number>`. The zip file must contain different directories for the abover exercises and a single PDF file that contains the measurement results. 
 
