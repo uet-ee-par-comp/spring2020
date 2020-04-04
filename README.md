@@ -1,20 +1,44 @@
 # Programming Assignment 1
 
-During the first lab, you are learning/practising how to accelerate an application on a CPU. The application in this assignment is matrix multiplication. Given a vector `v` with `n` elements, a matrix `M` with `n × n` elements,  `matrix.c` computes the product vector `r[n] = v[n] × M[n × n]`. In the follwing exercises do not make assumption about the value of `n`
+During the first lab, you are learning/practising how to accelerate an application on a CPU. The application in this assignment is matrix multiplication. Given a vector `v` with `n` elements, a matrix `M` with `n × n` elements,  `matrix.c` computes the product vector `r[n] = v[n] × M[n × n]`. THe application can be compiled as 
 
-# Exercise 1
-Optimize the application so that the matrix multiplication is cache friendly. Mesaure and report the execution time.
+```
+gcc -lm matrix.c -o matrix.exe
+```
+
+To run the applicattion use the following command
+
+```
+./matrix.exe <value of n>
+```
+In all the exercises, DONOT MAKE ANY ASSUMPTION ABOUT THE VALUE OF n. 
+
+## Exercise 1
+Optimize the application so that the matrix multiplication is cache friendly. Mesaure and report the execution time. 
 
 ## Exercise 2
 Extend the application to compute the `r[n] = A[n x n] × B [n × n]`. Mesaure and report the execution time. 
 
-## Exercise 
+## Exercise 3
 Using Pthreads library parallelize the application. You should now be able the application as:
 ```
-./matrix.exe <number of threads> <value of n>
+./matrix.exe <value of n>  <number of threads>
 ```
+Measure and report the parallel execution time with the maximum hardware threads of your CPU.
 
-
+## Exercise 4
+Parallelize the application using OPENMP.  Measure and report the parallel execution time with the maximum hardware threads of your CPU.
 
 ## Exercise 5
-GCC auto vectorize options in the compilation. Mesaure and report the execution time after GCC auto vectorization.
+Extend the parallelized application of Exercise 4 to vectorize the matrix multiplication using AVX2. The applcation should be multithreaded with OPENMP and vectorized AVX2. Measure and report the parallel execution time with the maximum hardware threads of your CPU.
+
+
+## Exercise 6
+Extend the pthreaded application of Exercise 3 to vectorize the matrix multiplication using ISPC. The applcation should be multithreaded with pthreads and vectorized ISPC. Measure and report the parallel execution time with the maximum hardware threads of your CPU.
+
+## Exercise 7
+Use GCC auto vectorize options in the compile the application of Exercise 4. Mesaure and report the execution time after GCC auto vectorization.
+
+## Submitting the assignment
+Submit the assignment as a single ZIP file. Name the file as your `prog_assn_1_<your roll number`. The zip file must contain different directories for the abover exercises and a single PDF file that contains the measurement results. 
+
