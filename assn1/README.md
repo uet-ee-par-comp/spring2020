@@ -17,7 +17,7 @@ In all the exercises, DONOT MAKE ANY ASSUMPTION ABOUT THE VALUE OF n. Select a r
 Run the application and report the sequential execution then. Optimize the application so that the matrix multiplication is cache friendly. Measure and report the execution time after the optimization. 
 
 ## Exercise 2
-Extend the application to compute the `r[n] = A[n x n] × B [n × n]`. Mesaure and report the sequential execution time. 
+Extend the application to compute the `C[n x n] = A[n x n] × B [n × n]`. Mesaure and report the sequential execution time. 
 
 ## Exercise 3
 Using Pthreads library parallelize the application. You should now be able the application as:
