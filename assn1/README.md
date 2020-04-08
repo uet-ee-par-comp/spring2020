@@ -20,14 +20,14 @@ Run the application and report the sequential execution then. Optimize the appli
 Extend the application to compute the `C[n x n] = A[n x n] × B [n × n]`. Mesaure and report the sequential execution time. 
 
 ## Exercise 3
-Using Pthreads library parallelize the application. You should now be able the application as:
+Using Pthreads library parallelize the application developed in Exercise 2. You should now be able the application as:
 ```
 ./matrix.exe <value of n>  <number of threads>
 ```
 Measure and report the parallel execution time with the maximum hardware threads of your CPU.
 
 ## Exercise 4
-Parallelize the application using OPENMP.  Measure and report the parallel execution time with the maximum hardware threads of your CPU.
+Parallelize the application developed in Exercise 2 using OPENMP.  Measure and report the parallel execution time with the maximum hardware threads of your CPU.
 
 ## Exercise 5
 Extend the parallelized application of Exercise 4 to vectorize the matrix multiplication using AVX2. The applcation should be multithreaded with OPENMP and vectorized AVX2. Measure and report the parallel execution time with the maximum hardware threads of your CPU.
