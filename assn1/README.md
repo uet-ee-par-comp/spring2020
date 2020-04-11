@@ -11,10 +11,15 @@ To run the applicattion use the following command:
 ```
 ./matrix.exe <value of n>
 ```
-In all the exercises, DONOT MAKE ANY ASSUMPTION ABOUT THE VALUE OF n. Select a reasonable value of `n` so that the application exectues for few seconds so that you can observe the speedup achieved by accelerating the application,  On my computer the sequential time of given application is about 3.5 seconds for `n = 10000`. Explicitly mention the value of `n` and the number of threads while reporting the results. To ensure the correctness always compare the parallel and sequential results as done in the given application.  
+In all the exercises, DONOT MAKE ANY ASSUMPTION ABOUT THE VALUE OF n. Select a reasonable value of `n` so that the application exectues for few seconds so that you can observe the speedup achieved by accelerating the application,  On my computer the sequential time of given application is about 3.5 seconds for `n = 10000`. Explicitly mention the value of `n` and the number of threads while reporting the results. To ensure the correctness always compare the parallel and sequential results as done in the given application.   
+
+
+## Submitting the assignment
+Submit the assignment as a single ZIP file. Name the file as `prog_assn_1_<your roll number>`. The zip file must contain different directories for the abover exercises. The exercise directories must conatin the code and a Makefile to compile the code. The assignment report must be in a single PDF file containing the measurement results. Please also explain the difference in execution time for various exercises.
+
  
 ## Exercise 1
-Run the application and report the sequential execution then. Optimize the application so that the matrix multiplication is cache friendly. Measure and report the execution time after the optimization. 
+Run the application and report the sequential execution then. Optimize the application so that the matrix multiplication is cache friendly. Measure and report the execution time after the optimization. Explain how you make the application cache friendly
 
 ## Exercise 2
 Extend the application to compute the `C[n x n] = A[n x n] × B [n × n]`. Mesaure and report the sequential execution time. 
@@ -39,6 +44,5 @@ Extend the pthreaded application of Exercise 3 to vectorize the matrix multiplic
 ## Exercise 7
 Use GCC auto vectorize options for compiling the application of Exercise 4. Mesaure and report the execution time after GCC auto vectorization.
 
-## Submitting the assignment
-Submit the assignment as a single ZIP file. Name the file as `prog_assn_1_<your roll number>`. The zip file must contain different directories for the abover exercises and a single PDF file that contains the measurement results. 
+
 
