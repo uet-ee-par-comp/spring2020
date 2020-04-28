@@ -21,7 +21,7 @@ We are using a triangular smoothing algorithm, i.e. the maximum weight is for th
 dimension will use the following weights: 1, 2, 3, 2, 1. In this assignment, you will use a two-dimensional 5-point triangular smooth filter.
 
 
-##Accelerated application
+## Accelerated application
 A sequential version of the application is provided, for your convenience, in the directory “sequential”. Please read the code carefully, and try to understand it. There are no assumptions
 about the size of the input images, thus the code must be capable of running with color images of any size. The output must match the sequential version; a compare utility is provided to test for this. The
 output that you should verify is the final output image, named smooth.bmp. You are free to also save the intermediate images, e.g. for debugging, but do not include the time to write this images in the
@@ -54,13 +54,13 @@ Do not include the printing/debugging etc in timing calculations. The speed up r
 Speedup results are important but we are also interested in the procedure you followed to get those results and
 their analysis. In the report, you need to mention at least the following along with the speedup results:
 
-- How you performed the four steps of Decomposition, Assignment, Orchestration and Mapping in creating your parallel application.
+- How you performed the four steps of Decomposition, Assignment, Orchestration and Mapping in creating your parallel application?
 - Performance of each GPU kernel indicated on the roofline model.
 - Important points regarding implementation strategy. For instance, how did you tackle with the problem of reading/writing to single histogram value in histogram implementation?
 - Problems/bottlenecks encountered. For instance how did you tackle the problem of reading/writing to same histogram values in Histogram computations?
 - Optimizations performed, e.g. the use of shared memory, did it help or not and why did it help?
 - Interesting profiling results to show that the GPU kernels have been optimized sufficiently.
-- Compiler options
+- Compiler options.
 
 
 ## Submitting the assignment
