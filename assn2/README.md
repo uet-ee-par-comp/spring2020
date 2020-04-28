@@ -55,7 +55,7 @@ Speedup results are important but we are also interested in the procedure you fo
 their analysis. In the report, you need to mention at least the following along with the speedup results:
 
 - How you performed the four steps of Decomposition, Assignment, Orchestration and Mapping in creating your parallel application?
-- Performance of each GPU kernel indicated on the roofline model.
+- Performance of each GPU kernel indicated on the roofline model. Neglect the effect of shared memory and caches while building the roofline model.
 - Important points regarding implementation strategy. For instance, how did you tackle with the problem of reading/writing to single histogram value in histogram implementation?
 - Problems/bottlenecks encountered. For instance how did you tackle the problem of reading/writing to same histogram values in Histogram computations?
 - Optimizations performed, e.g. the use of shared memory, did it help or not and why did it help?
