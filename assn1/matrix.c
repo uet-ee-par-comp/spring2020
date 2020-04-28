@@ -78,9 +78,9 @@ int main(int argc, char *argv[]){
   //check
   int i;
   for(i=0; i<size; i++)
-     if(result_sq[i] != result_pl[i]){
-     printf("wrong at position %d\n", i);
-      return 0;
+     if(fabs(result_sq[i] - result_pl[i])/fabs(result_sq[i]) > 0.001){
+        printf("wrong at position %d\n", i);
+        return 0;
     }
 
   free(vector);
