@@ -29,7 +29,7 @@ performance measurements. In the directory “images”, 16 different images are
 
  
 
-## Speedup
+## Speedups
 
 You have to measure and report several different speedups:
 
