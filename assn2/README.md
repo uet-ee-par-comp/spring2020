@@ -34,13 +34,17 @@ performance measurements. In the directory “images”, 16 different images are
 You have to measure and report several different speedups:
 
 Overall Speedup of CPU implementation = (Total Time of sequential program) / (Total time on CPU)
+
 Overall Speedup of GPU implementation over sequential = (Total Time of sequential program) / (Total time on GPU) 
+
 Overall Speedup of GPU implementation over CPU = (Total Time on CPU) / (Total Time on GPU)
 
 The CPU time is the execution time of the application parallelized on CPU. The total time on GPU must include the memory transfer overhead. Furthermore, the "kernel" is the part of the sequential program that is accelerated on GPU or CPU. You have to also measure and report kernel speedups: 
 
 Kernel speedup of CPU over sequential = (Kernel Execution Time in sequential program) / (kernel exection time in CPU)
+
 Kernel speedup of GPU over sequential = (Kernel Execution Time in sequential program) / (kernel exection time in GPU)
+
 Kernel speedup of GPU over CPU = (Kernel Execution Time in CPU) / (kernel exection time in GPU)
 
 
@@ -51,7 +55,7 @@ Speedup results are important but we are also interested in the procedure you fo
 their analysis. In the report, you need to mention at least the following along with the speedup results:
 
 - How you performed the four steps of Decomposition, Assignment, Orchestration and Mapping in creating your parallel application.
-- Performance of each GPU kernel on the roofline model of the GPU.
+- Performance of each GPU kernel indicated on the roofline model.
 - Important points regarding implementation strategy. For instance, how did you tackle with the problem of reading/writing to single histogram value in histogram implementation?
 - Problems/bottlenecks encountered. For instance how did you tackle the problem of reading/writing to same histogram values in Histogram computations?
 - Optimizations performed, e.g. the use of shared memory, did it help or not and why did it help?
