@@ -24,7 +24,7 @@ dimension will use the following weights: 1, 2, 3, 2, 1. In this assignment, you
 ## Accelerated application
 A sequential version of the application is provided, for your convenience, in the directory “sequential”. Please read the code carefully, and try to understand it. There are no assumptions
 about the size of the input images, thus the code must be capable of running with color images of any size. The output must match the sequential version; a compare utility is provided to test for this. The
-output that you should verify is the final output image, named smooth.bmp. You are free to also save the intermediate images, e.g. for debugging, but do not include the time to write this images in the
+output that you should verify is the final output image, named `smooth.bmp`. You are free to also save the intermediate images, e.g. for debugging, but do not include the time to write this images in the
 performance measurements. In the directory “images”, 16 different images are provided for testing.  Running the makefile in the "sequential" directory will compile and run the sequntial program. Edit the makefile to run the program with a certain image as input. 
 
  
