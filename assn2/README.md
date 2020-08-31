@@ -24,12 +24,12 @@ dimension will use the following weights: 1, 2, 3, 2, 1. In this assignment, you
 ## Accelerated application
 A sequential version of the application is provided, for your convenience, in the directory “sequential”. Please read the code carefully, and try to understand it. There are no assumptions
 about the size of the input images, thus the code must be capable of running with color images of any size. The output must match the sequential version; a compare utility is provided to test for this. The
-output that you should verify is the final output image, named smooth.bmp. You are free to also save the intermediate images, e.g. for debugging, but do not include the time to write this images in the
+output that you should verify is the final output image, named `smooth.bmp`. You are free to also save the intermediate images, e.g. for debugging, but do not include the time to write this images in the
 performance measurements. In the directory “images”, 16 different images are provided for testing.  Running the makefile in the "sequential" directory will compile and run the sequntial program. Edit the makefile to run the program with a certain image as input. 
 
  
 
-## Speedup
+## Speedups
 
 You have to measure and report several different speedups:
 
@@ -55,7 +55,7 @@ Speedup results are important but we are also interested in the procedure you fo
 their analysis. In the report, you need to mention at least the following along with the speedup results:
 
 - How you performed the four steps of Decomposition, Assignment, Orchestration and Mapping in creating your parallel application?
-- Performance of each GPU kernel indicated on the roofline model.
+- Performance of each GPU kernel indicated on the roofline model. Neglect the effect of shared memory and caches while building the roofline model.
 - Important points regarding implementation strategy. For instance, how did you tackle with the problem of reading/writing to single histogram value in histogram implementation?
 - Problems/bottlenecks encountered. For instance how did you tackle the problem of reading/writing to same histogram values in Histogram computations?
 - Optimizations performed, e.g. the use of shared memory, did it help or not and why did it help?
