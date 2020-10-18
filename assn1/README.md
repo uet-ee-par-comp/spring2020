@@ -18,30 +18,30 @@ In all the exercises, DONOT MAKE ANY ASSUMPTION ABOUT THE VALUE OF n. Select a r
 Submit the assignment as a single ZIP file. Name the file as `prog_assn_1_<your roll number>`. The zip file must contain different directories for the abover exercises. The exercise directories must conatin the code and a Makefile to compile the code. The assignment report must be in a single PDF file containing the measurement results. Please also explain the difference in execution time for various exercises.
 
  
-## Exercise 1
+## Exercise 1 (4 marks)
 Run the application and report the sequential execution then. Optimize the application so that the matrix multiplication is cache friendly. Measure and report the execution time after the optimization. Explain how you make the application cache friendly
 
-## Exercise 2
+## Exercise 2 (1 mark)
 Extend the application to compute the `C[n x n] = A[n x n] × B [n × n]`. Mesaure and report the sequential execution time. 
 
-## Exercise 3
+## Exercise 3 (4 marks)
 Using Pthreads library parallelize the application developed in Exercise 2. You should now be able the application as:
 ```
 ./matrix.exe <value of n>  <number of threads>
 ```
 Measure and report the parallel execution time with the maximum hardware threads of your CPU.
 
-## Exercise 4
+## Exercise 4 (2 marks)
 Parallelize the application developed in Exercise 2 using OPENMP.  Measure and report the parallel execution time with the maximum hardware threads of your CPU.
 
-## Exercise 5
+## Exercise 5 (4 marks)
 Extend the parallelized application of Exercise 4 to vectorize the matrix multiplication using AVX2. The applcation should be multithreaded with OPENMP and vectorized AVX2. Measure and report the parallel execution time with the maximum hardware threads of your CPU.
 
 
-## Exercise 6
+## Exercise 6 (4 marks)
 Extend the pthreaded application of Exercise 3 to vectorize the matrix multiplication using ISPC. The applcation should be multithreaded with pthreads and vectorized ISPC. Measure and report the parallel execution time with the maximum hardware threads of your CPU.
 
-## Exercise 7
+## Exercise 7 (1 marks)
 Use GCC auto vectorize options for compiling the application of Exercise 4. Mesaure and report the execution time after GCC auto vectorization.
 
 
